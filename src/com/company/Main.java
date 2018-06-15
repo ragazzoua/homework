@@ -13,11 +13,11 @@ public class Main {
 
         int x = scanner.nextInt();
         int y = scanner.nextInt();
-
         System.out.println("First number " + x);
         System.out.println("Second number " + y);
-        System.out.println(x + y);
-        System.out.println(x * y);
+        System.out.println("-----------------");
+        System.out.println("Ammount " + (x + y));
+        System.out.println("Composition " + x * y);
 
     }
 

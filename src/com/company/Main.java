@@ -1,14 +1,23 @@
 package com.company;
 
+import java.util.Scanner;
+import java.util.StringTokenizer;
+
 public class Main {
 
     public static void main(String[] args) {
-        int[] i = {1, 2, 3, 4, 5, 6, 7, 8, 9, 0};
+        System.out.println("Введите пароль ");
 
-        for (int a : i) {
-            System.out.println(a);
-            System.out.print(a);
+        Scanner scanner = new Scanner(System.in);
+        String password1 = scanner.next();
+        String password2 = "password2";
+
+        if (password1.equals(password2)) {
+            System.out.println("You are lucky");
+        } else {
+            System.out.println("You are lose");
         }
+
     }
 }
 

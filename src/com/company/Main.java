@@ -5,18 +5,23 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("Введите пароль ");
+
 
         Scanner scanner = new Scanner(System.in);
-        String password1 = scanner.next();
-        String password2 = "password2";
 
-        if (password1.equals(password2)) {
-            System.out.println("You are lucky");
-        } else {
-            System.out.println("You are lose");
-        }
+        System.out.println("Give me too numbers and press Enter after each");
+
+        int x = scanner.nextInt();
+        int y = scanner.nextInt();
+
+        System.out.println("First number " + x);
+        System.out.println("Second number " + y);
+        System.out.println(x + y);
+        System.out.println(x * y);
 
     }
+
+
 }
+
 

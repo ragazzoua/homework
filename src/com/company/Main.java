@@ -27,6 +27,27 @@ public class Main {
 
         System.out.println(x);
         System.out.println(y);
+        System.out.println("------------------");
+        System.out.println("Min to Max");
+        if (x > y) {
+            System.out.println(y);
+            System.out.println(x);
+        }
+        else {
+            System.out.println(x);
+            System.out.println(y);
+        }
+
+        System.out.println("------------------");
+        System.out.println("Max to Min");
+        if (x > y) {
+            System.out.println(x);
+            System.out.println(y);
+        }
+        else {
+            System.out.println(y);
+            System.out.println(x);
+        }
 
     }
 

@@ -12,6 +12,7 @@ public class Main {
         int x = scanner.nextInt();
         int y = scanner.nextInt();
 
+
         if (x > y) {
             System.out.println("Max Value " + x);
             System.out.println("Min Value " + y);
@@ -20,6 +21,14 @@ public class Main {
             System.out.println("Min Value " + x);
             System.out.println("Max Value " + y);
         }
+        String str = String.valueOf(x);
+        String str1 = String.valueOf(y);
+        x = str.length();
+        y = str1.length();
+
+        System.out.println(x);
+        System.out.println(y);
+
     }
 
 }

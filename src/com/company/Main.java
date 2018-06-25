@@ -11,9 +11,7 @@ public class Main {
 
         int x = scanner.nextInt();
         int y = scanner.nextInt();
-        System.out.println("First number " + x);
-        System.out.println("Second number " + y);
-        System.out.println("-----------------");
+
         if (x > y) {
             System.out.println("Max Value " + x);
             System.out.println("Min Value " + y);

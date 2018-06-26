@@ -1,52 +1,40 @@
 package com.company;
 
-import java.util.Scanner;
+import java.util.Arrays;
 
 public class Main {
 
+    static int[] values = {565, 87788, 1123300, 77455, 9996, 5, 247, 10};
+
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.println("Give me too numbers and press Enter after each");
-
-        int x = scanner.nextInt();
-        int y = scanner.nextInt();
 
 
-        if (x > y) {
-            System.out.println("Max Value " + x);
-            System.out.println("Min Value " + y);
-        } else {
-            System.out.println("Min Value " + x);
-            System.out.println("Max Value " + y);
+        Arrays.sort(values);
+
+    }
+
+    static void findMinMax(int[] values){
+
+        int min = values[0];
+        int max = values[0];
+        //Arrays.sort(values);
+
+        for (int i = 1; i < values.length; i++) {
+            if (min > values[i]) {
+                min = values[i];
+            }
+
         }
-        String str = String.valueOf(x);
-        String str1 = String.valueOf(y);
-        x = str.length();
-        y = str1.length();
+        System.out.println(min);
+        System.out.println(String.valueOf(min).length());
+        for (int i = 1; i < values.length; i++) {
+            if (max < values[i]) {
+                max = values[i];
+            }
 
-        System.out.println(x);
-        System.out.println(y);
-        System.out.println("------------------");
-        System.out.println("Min to Max");
-        if (x > y) {
-            System.out.println(y);
-            System.out.println(x);
-        } else {
-            System.out.println(x);
-            System.out.println(y);
         }
-
-        System.out.println("------------------");
-        System.out.println("Max to Min");
-        if (x > y) {
-            System.out.println(x);
-            System.out.println(y);
-        } else {
-            System.out.println(y);
-            System.out.println(x);
-        }
-
+        System.out.println(max);
+        System.out.println(String.valueOf(max).length());
     }
 
 }

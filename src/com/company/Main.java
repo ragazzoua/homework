@@ -32,8 +32,7 @@ public class Main {
         if (x > y) {
             System.out.println(y);
             System.out.println(x);
-        }
-        else {
+        } else {
             System.out.println(x);
             System.out.println(y);
         }
@@ -43,8 +42,7 @@ public class Main {
         if (x > y) {
             System.out.println(x);
             System.out.println(y);
-        }
-        else {
+        } else {
             System.out.println(y);
             System.out.println(x);
         }

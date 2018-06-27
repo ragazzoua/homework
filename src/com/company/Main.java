@@ -4,12 +4,30 @@ import java.util.Arrays;
 
 public class Main {
 
-    static int[] values = {565, 87788, 1123300, 77455, 9996, 5, 247, 10};
+    static int[] values = {565, 87788, 1123300, 77455, 9996, 5000, 247, 10};
 
     public static void main(String[] args) {
 
+        int big = values[0];
+        int small = values[0];
 
-        Arrays.sort(values);
+        for (int i = 1; i < values.length; i++) {
+            if (small > values[i]) {
+                small = values[i];
+            } else if (big < values[i]) {
+                big = values[i];
+            }
+        }
+        System.out.println("Small Number " + (small) + "; Number length " + String.valueOf(small).length());
+        System.out.println("Big Number "+ (big) + "; Number length " + String.valueOf(big).length());
+    }
+
+        
+        
+        
+        
+
+        /*Arrays.sort(values);
         System.out.println(Arrays.toString(values));
         System.out.println("Min to Max");
         System.out.println("---------------------------");
@@ -22,7 +40,7 @@ public class Main {
             System.out.println("Value " + values[i]);
         }
 
-    }
+}*/
 
     static void findMinMax(int[] values) {
 

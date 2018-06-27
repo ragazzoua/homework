@@ -8,6 +8,9 @@ public class Main {
 
     public static void main(String[] args) {
 
+        int[] countArray = new int[values.length];
+        int maxValueOfDifferentDigitsIndex = 0;
+        int maxValueOfDifferentDigits = 0;
 
     }
 

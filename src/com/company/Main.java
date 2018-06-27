@@ -8,18 +8,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int big = values[0];
-        int small = values[0];
 
-        for (int i = 1; i < values.length; i++) {
-            if (small > values[i]) {
-                small = values[i];
-            } else if (big < values[i]) {
-                big = values[i];
-            }
-        }
-        System.out.println("Small Number " + (small) + "; Number length " + String.valueOf(small).length());
-        System.out.println("Big Number "+ (big) + "; Number length " + String.valueOf(big).length());
     }
 
         

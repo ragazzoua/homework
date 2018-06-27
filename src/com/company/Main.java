@@ -4,22 +4,35 @@ import java.util.Arrays;
 
 public class Main {
 
-    static int[] values = {565, 87788, 1123300, 77455, 9996, 5000, 247, 10};
+    static int[] values = {10, 20, 30, 40, 50, 60, 70, 100};
 
     public static void main(String[] args) {
 
-        int big = values[0];
-        int small = values[0];
-
-        for (int i = 1; i < values.length; i++) {
-            if (small > values[i]) {
-                small = values[i];
-            } else if (big < values[i]) {
-                big = values[i];
+        int ammountAllNumbers = 0;
+        int NumbersCount = 0;
+        for (int i = 0; i < values.length; i++)
+        {
+            ammountAllNumbers += values[i];
+            NumbersCount ++;
+        }
+        int averageAmount = ammountAllNumbers / NumbersCount;
+        System.out.println(averageAmount);
+        System.out.println("Numbers less then avarage");
+        for (int i = 0; i < values.length; i++)
+        {
+            if(values[i] < averageAmount)
+            {
+                System.out.println("Value " + values[i] + " - > Number of Chars " + String.valueOf(values[i]).length());
             }
         }
-        System.out.println("Small Number " + (small) + "; Number length " + String.valueOf(small).length());
-        System.out.println("Big Number "+ (big) + "; Number length " + String.valueOf(big).length());
+        System.out.println("Numbers bigger then avarage");
+        for (int i = 0; i < values.length; i++)
+        {
+            if(values[i] > averageAmount)
+            {
+                System.out.println("Value " + values[i] + " - > Number of Chars " + String.valueOf(values[i]).length());
+            }
+        }
     }
 
         

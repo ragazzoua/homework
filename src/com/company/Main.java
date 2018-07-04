@@ -9,8 +9,8 @@ public class Main {
     public static void main(String[] args) {
 
 
-        Arrays.sort(values);
 
+findMinMax(values);
     }
 
     static void findMinMax(int[] values){
@@ -25,16 +25,16 @@ public class Main {
             }
 
         }
-        System.out.println(min);
-        System.out.println(String.valueOf(min).length());
+        System.out.println("Minimum number - " + min);
+        System.out.println("Length of minimum number - " + String.valueOf(min).length());
         for (int i = 1; i < values.length; i++) {
             if (max < values[i]) {
                 max = values[i];
             }
 
         }
-        System.out.println(max);
-        System.out.println(String.valueOf(max).length());
+        System.out.println("Max number - " + max);
+        System.out.println("Length of max number - " + String.valueOf(max).length());
     }
 
 }
